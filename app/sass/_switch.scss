@@ -43,7 +43,7 @@ h1.main-title {
 }
 
 .slider:hover,
-.slider.focus {
+.slider:focus {
   opacity: 0.7;
 }
 
@@ -52,7 +52,7 @@ h1.main-title {
   content: "";
   width: 2.5rem;
   height: 2.5rem;
-  left: 0.6rem;
+  left: 2.7rem;
   bottom: 0.4rem;
   background-color: white;
   -webkit-transition: 0.4s;
@@ -68,9 +68,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider::before {
-  -webkit-transform: translateX(2.1rem);
-  -ms-transform: translateX(2.1rem);
-  transform: translateX(2.1rem);
+  -webkit-transform: translateX(-2.1rem);
+  -ms-transform: translateX(-2.1rem);
+  transform: translateX(-2.1rem);
 }
 
 .slider.round {

@@ -27,9 +27,11 @@
 
 .card__header {
   border-bottom: 1px solid utils.$light-grayish-blue;
+  color: utils.$dark-grayish-blue;
 
   .plan {
     margin-bottom: 2.35rem;
+    color: utils.$dark-grayish-blue;
   }
 
   p.price {
@@ -47,6 +49,7 @@ ul li {
   padding: 1.75rem 0;
   line-height: 1.18;
   border-bottom: 1px solid utils.$light-grayish-blue;
+  color: utils.$dark-grayish-blue;
 }
 
 .card-2 {
@@ -55,11 +58,21 @@ ul li {
   color: white;
 
   .card__header {
+    color: white;
+  }
+
+  .plan {
+    margin-bottom: 2.35rem;
+    color: white;
+  }
+
+  .card__header {
     border-bottom: 1px solid utils.$light-grayish-blue;
   }
 
   ul li {
     border-bottom: 1px solid utils.$light-grayish-blue;
+    color: white;
   }
 
   button {
