@@ -257,8 +257,7 @@ button:focus {
   main {
     display: flex;
     flex-direction: row;
-    width: 72.75%;
-    min-width: 70rem;
+    width: 90%;
     margin-top: 3rem;
   }
 
@@ -285,6 +284,12 @@ button:focus {
   p.price span {
     margin-right: 0.75rem;
     font-size: 4rem;
+  }
+}
+@media screen and (min-width: 1343px) {
+  main {
+    width: 72.75%;
+    min-width: 70rem;
   }
 }
 

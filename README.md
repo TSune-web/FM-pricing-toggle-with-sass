@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Pricing Toggle with Sass](https://tsune-web.github.io/FM-pricing-toggle-with-sass/)
 
 ## My process
 
@@ -52,10 +52,10 @@ checkBox.target.checked;  // return a boolean value, initially false
 
 ### Continued development
 
-- Sass/ scss
+- Sass/ scss:
   For this challenge, I used variables, nesting, partials, modules, and mixins while doing research on how to implement them. I haven't used mathematical styling in css so that'll be interesting to know and be more efficient for responsive design.
 
-- JavaScript: interactive components
+- JavaScript - interactive components:
   This challenge involves simple toggle effects, but it was fun to implement the functionality. Not only the toggle functionality, I'd like to know and be able to create more advanced applications with JavaScript.
 
 ### Useful resources
