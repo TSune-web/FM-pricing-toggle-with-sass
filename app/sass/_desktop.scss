@@ -1,0 +1,55 @@
+@use "_utils.scss";
+
+@media screen and (min-width: 768px) {
+  body {
+    background: url(../../images/bg-top.svg) no-repeat,
+      url(../../images/bg-bottom.svg) no-repeat;
+    background-position: right -9rem top -2rem, left bottom;
+    background-color: utils.$v-light-grayish-blue;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    background-position: right top, left bottom 11rem;
+  }
+
+  header.main-title {
+    margin-top: 7.125rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    width: 72.75%;
+    min-width: 70rem;
+    margin-top: 3rem;
+  }
+
+  .card {
+    margin-top: 3.75rem;
+    padding-top: 3.7rem;
+
+    &:nth-child(2) {
+      padding-top: 5.75rem;
+      padding-bottom: 5rem;
+    }
+  }
+
+  .card:last-child {
+    margin-bottom: 0;
+  }
+
+  header.card__header {
+    padding-bottom: 0.5rem;
+  }
+
+  p.price {
+    line-height: 1.14;
+
+    span {
+      margin-right: 0.75rem;
+      font-size: 4rem;
+    }
+  }
+}

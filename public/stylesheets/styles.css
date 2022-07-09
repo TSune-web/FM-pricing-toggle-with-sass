@@ -1,0 +1,291 @@
+/*************************
+  Reset
+*************************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*************************
+  Global setting
+*************************/
+body {
+  background: url(../../images/bg-top.svg) no-repeat;
+  background-position: right -19.5rem top -3.5rem;
+  background-size: 100%;
+  background-color: hsl(240deg, 78%, 98%);
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+header.card__header > h1 {
+  font-size: 1.75rem;
+}
+
+p {
+  font-size: 6.8rem;
+}
+
+span {
+  font-size: 1.5rem;
+}
+
+ul {
+  width: 100%;
+}
+ul li {
+  font-size: 1.5rem;
+}
+
+header.main-title {
+  text-align: center;
+  margin-top: 6.5rem;
+}
+
+h1.main-title {
+  margin: 3.75rem 0;
+  font-size: 3.25rem;
+}
+
+.display {
+  color: hsl(234deg, 14%, 74%);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 5.75rem;
+  height: 3.4rem;
+  margin: 0 1.9rem;
+  padding-top: 0.75rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  background: linear-gradient(hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%)) no-repeat;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:hover,
+.slider.focus {
+  opacity: 0.7;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  left: 0.6rem;
+  bottom: 0.4rem;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider::before {
+  -webkit-transform: translateX(2.1rem);
+  -ms-transform: translateX(2.1rem);
+  transform: translateX(2.1rem);
+}
+
+.slider.round {
+  border-radius: 3.4rem;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
+
+/*************************
+  Positioning & sizing card components
+*************************/
+.card {
+  text-align: center;
+  width: 87%;
+  margin-top: 3rem;
+  padding: 3.45rem 3rem 3.2rem;
+  background-color: hsl(240deg, 78%, 98%);
+  border-radius: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.card:last-child {
+  margin-bottom: 5rem;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.card__header {
+  border-bottom: 1px solid hsl(234deg, 14%, 74%);
+}
+.card__header .plan {
+  margin-bottom: 2.35rem;
+}
+.card__header p.price {
+  margin-bottom: 2.2rem;
+}
+.card__header p.price span {
+  display: inline-block;
+  font-size: 4rem;
+  transform: translateY(-1.375rem);
+}
+
+ul li {
+  padding: 1.75rem 0;
+  line-height: 1.18;
+  border-bottom: 1px solid hsl(234deg, 14%, 74%);
+}
+
+.card-2 {
+  background: linear-gradient(hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%)) no-repeat;
+  color: white;
+}
+.card-2 .card__header {
+  border-bottom: 1px solid hsl(234deg, 14%, 74%);
+}
+.card-2 ul li {
+  border-bottom: 1px solid hsl(234deg, 14%, 74%);
+}
+.card-2 button {
+  color: hsl(237deg, 63%, 64%);
+}
+
+button {
+  background: linear-gradient(hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%)) no-repeat;
+  width: 100%;
+  margin-top: 3.15rem;
+  padding: 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1.25rem;
+  letter-spacing: 0.25rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background: none;
+  background-color: white;
+  color: hsl(237deg, 63%, 64%);
+  outline: 1px solid hsl(232deg, 13%, 33%);
+}
+
+.card-2 > button {
+  background: none;
+  background-color: white;
+}
+
+.card-2 > button:hover,
+.card-2 > button:focus {
+  background-color: hsl(237deg, 63%, 64%);
+  color: white;
+  outline: 1px solid white;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: url(../../images/bg-top.svg) no-repeat, url(../../images/bg-bottom.svg) no-repeat;
+    background-position: right -9rem top -2rem, left bottom;
+    background-color: hsl(240deg, 78%, 98%);
+  }
+}
+@media screen and (min-width: 1100px) {
+  body {
+    background-position: right top, left bottom 11rem;
+  }
+
+  header.main-title {
+    margin-top: 7.125rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    width: 72.75%;
+    min-width: 70rem;
+    margin-top: 3rem;
+  }
+
+  .card {
+    margin-top: 3.75rem;
+    padding-top: 3.7rem;
+  }
+  .card:nth-child(2) {
+    padding-top: 5.75rem;
+    padding-bottom: 5rem;
+  }
+
+  .card:last-child {
+    margin-bottom: 0;
+  }
+
+  header.card__header {
+    padding-bottom: 0.5rem;
+  }
+
+  p.price {
+    line-height: 1.14;
+  }
+  p.price span {
+    margin-right: 0.75rem;
+    font-size: 4rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

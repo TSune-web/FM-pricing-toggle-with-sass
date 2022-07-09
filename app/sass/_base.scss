@@ -1,0 +1,42 @@
+@use "_utils.scss";
+
+/*************************
+  Global setting
+*************************/
+body {
+  background: url(../../images/bg-top.svg) no-repeat;
+  background-position: right -19.5rem top -3.5rem;
+  background-size: 100%;
+  background-color: utils.$v-light-grayish-blue;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+header.card__header > h1 {
+  font-size: 1.75rem;
+}
+
+p {
+  font-size: 6.8rem;
+}
+
+span {
+  font-size: 1.5rem;
+}
+
+ul {
+  width: 100%;
+
+  li {
+    font-size: 1.5rem;
+  }
+}

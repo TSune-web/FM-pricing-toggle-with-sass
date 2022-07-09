@@ -1,0 +1,104 @@
+@use "_utils.scss";
+
+/*************************
+  Positioning & sizing card components
+*************************/
+.card {
+  text-align: center;
+  width: 87%;
+  margin-top: 3rem;
+  padding: 3.45rem 3rem 3.2rem;
+  background-color: utils.$v-light-grayish-blue;
+  border-radius: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.card:last-child {
+  margin-bottom: 5rem;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.card__header {
+  border-bottom: 1px solid utils.$light-grayish-blue;
+
+  .plan {
+    margin-bottom: 2.35rem;
+  }
+
+  p.price {
+    margin-bottom: 2.2rem;
+
+    span {
+      display: inline-block;
+      font-size: 4rem;
+      transform: translateY(-1.375rem);
+    }
+  }
+}
+
+ul li {
+  padding: 1.75rem 0;
+  line-height: 1.18;
+  border-bottom: 1px solid utils.$light-grayish-blue;
+}
+
+.card-2 {
+  @include utils.linear-background;
+
+  color: white;
+
+  .card__header {
+    border-bottom: 1px solid utils.$light-grayish-blue;
+  }
+
+  ul li {
+    border-bottom: 1px solid utils.$light-grayish-blue;
+  }
+
+  button {
+    color: hsl(237, 63%, 64%);
+  }
+}
+
+button {
+  @include utils.linear-background;
+
+  width: 100%;
+  margin-top: 3.15rem;
+  padding: 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1.25rem;
+  letter-spacing: 0.25rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background: none;
+  background-color: white;
+  color: hsl(237, 63%, 64%);
+  outline: 1px solid utils.$dark-grayish-blue;
+}
+
+.card-2 > button {
+  background: none;
+  background-color: white;
+}
+
+.card-2 > button:hover,
+.card-2 > button:focus {
+  background-color: hsl(237, 63%, 64%);
+  color: white;
+  outline: 1px solid white;
+}
